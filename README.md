@@ -125,6 +125,25 @@ The Orders endpoints allow you to create and manage grocery orders.
 
 The API provides an endpoint for registering a new API client and obtaining an access token.
 
+**API Documentation Structure**
+
+This documentation is organised into the following sections:
+
+•	Authentication
+
+•	Status
+
+•	Products
+
+•	Carts
+
+•	Orders
+
+•	Error Handling
+
+
+**API AIthentication**
+
 The Simple Grocery Store API requires an API client to be registered before making authenticated requests.
 
 **Register a New API Client**
@@ -178,23 +197,42 @@ StatusCode	      Description
 409              API client already registered   
 
 
+**Status**
+Checks whether the API is working.
+Endpoint: Get /Status
+Returns the status of the API.
+Example Response:
+{
+    "status": "UP"
+}
+Status UP indicates that the API is running as expected.
+No response / API is not functioning correctly.
 
 
-**API Documentation Structure**
+**Products**
+Get all Products
+Endpoint: GET/products
+Parameters
+No parameters required.
+Status codes
+Statuscode	      Description
+200	             Product found successfully
+404	             Not found
 
-This documentation is organised into the following sections:
 
-•	Authentication
+Example response
 
-•	Status
+{
+        "id": 6483,
+        "category": "candy",
+        "name": "Cadbury Milk Chocolate",
+        "inStock": true
+    }
 
-•	Products
 
-•	Carts
 
-•	Orders
 
-•	Error Handling
+
 
 
 
