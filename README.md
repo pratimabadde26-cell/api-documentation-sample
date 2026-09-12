@@ -261,6 +261,67 @@ Example response
     }
 
 
+**Get a product**
+
+Endpoint: Get/product/:productId
+
+Example Request
+
+Product by Id: https://simple-grocery-store-api.glitch.me/products/:productId?=5477
+
+https://simple-grocery-store-api.glitch.me/products/:productId?=4623
+
+Product by name: https://simple-grocery-store-api.glitch.me/products?category=coffee&results=5&available =true
+
+Parameters
+
+Name	             Type	            In	       Required	           Description
+
+productId         Integer	        path       	yes             	Unique Id of the product
+
+Product by name  	string	         path	       yes	             Item found
+
+Status codes
+
+Status code	Description
+
+200         Product found successfully with by Id
+
+200	        Product found successfully by name
+
+404	        Product Id not found
+
+Example Response
+
+{
+
+    "id": 5477,
+    
+    "category": "dairy",
+    
+    "name": "Cream Cheese",
+    
+    "manufacturer": "Jack&Mary Organic Farms",
+    
+    "price": 2.95,
+    
+    "current-stock": 12,
+    
+    "inStock": true
+    
+}
+
+Example Error Response
+
+{
+
+    "error": "No product with id 4623."
+    
+}
+
+
+
+
 
 
 
