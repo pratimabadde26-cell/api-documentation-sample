@@ -82,7 +82,9 @@ https://simple-grocery-store-api.glitch.me/status
 **Get /Status**
 
 {
+
   "status": "UP"
+  
 }
 
 **Products**
@@ -128,10 +130,15 @@ The API provides an endpoint for registering a new API client and obtaining an a
 This documentation is organised into the following sections:
 
 •	Authentication
+
 •	Status
+
 •	Products
+
 •	Carts
+
 •	Orders
+
 •	Error Handling
 
 
