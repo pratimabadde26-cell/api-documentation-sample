@@ -125,6 +125,61 @@ The Orders endpoints allow you to create and manage grocery orders.
 
 The API provides an endpoint for registering a new API client and obtaining an access token.
 
+The Simple Grocery Store API requires an API client to be registered before making authenticated requests.
+
+**Register a New API Client**
+
+Use the following endpoint to register a new API client:
+
+POST /api-clients
+
+**Request Body**
+
+The request body requires a client name and email address.
+
+{
+  "clientName": "YourName",
+  "clientEmail": "yourname@email.com"
+}
+
+**Parameters**
+
+Parameter	    Required	   Type	      Description
+
+clientName 	  String	      Yes	      Name of the API client   
+
+clientEmail 	 String     	 Yes	      Email address used to register the client
+
+Successful Response
+
+HTTP 201 Created
+
+A successful request returns an access token:
+
+{
+  "accessToken": "YOUR_ACCESS_TOKEN"
+}
+
+Error Response
+
+If the API client has already been registered, the API returns:
+
+HTTP 409 Conflict
+
+{
+  "error": "API client already registered. Try a different email."
+}
+
+**Status Codes**
+
+StatusCode	      Description
+
+201             	API client created successfully
+409              API client already registered   
+
+
+
+
 **API Documentation Structure**
 
 This documentation is organised into the following sections:
