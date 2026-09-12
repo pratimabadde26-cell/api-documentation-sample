@@ -157,8 +157,11 @@ POST /api-clients
 The request body requires a client name and email address.
 
 {
+
   "clientName": "YourName",
+  
   "clientEmail": "yourname@email.com"
+  
 }
 
 **Parameters**
@@ -177,6 +180,7 @@ A successful request returns an access token:
 
 
 {
+
   "accessToken": "YOUR_ACCESS_TOKEN"
   
 }
@@ -184,6 +188,7 @@ A successful request returns an access token:
 Error Response
 
 If the API client has already been registered, the API returns:
+
 
 HTTP 409 Conflict
 
@@ -198,6 +203,7 @@ HTTP 409 Conflict
 StatusCode	      Description
 
 201             	API client created successfully
+
 409              API client already registered   
 
 
@@ -245,8 +251,11 @@ Example response
 
 {
         "id": 6483,
+        
         "category": "candy",
+        
         "name": "Cadbury Milk Chocolate",
+        
         "inStock": true
         
     }
