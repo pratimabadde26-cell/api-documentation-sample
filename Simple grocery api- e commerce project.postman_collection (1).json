@@ -1,0 +1,3037 @@
+{
+  "info": {
+    "_postman_id": "e1a117d9-6182-4694-aaac-99e085608c31",
+    "name": "Simple grocery api- e commerce project",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54401786",
+    "_collection_link": "https://go.postman.co/collection/54401786-e1a117d9-6182-4694-aaac-99e085608c31?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "V 1.0",
+      "item": [
+        {
+          "name": "Sandbox/test project",
+          "item": [
+            {
+              "name": "Status",
+              "item": [
+                {
+                  "name": "status",
+                  "request": {
+                    "method": "GET",
+                    "header": []
+                  },
+                  "response": [
+                    {
+                      "name": "404 error",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "https://simple-grocery-store-api.glitch.me/states",
+                          "protocol": "https",
+                          "host": [
+                            "simple-grocery-store-api",
+                            "glitch",
+                            "me"
+                          ],
+                          "path": [
+                            "states"
+                          ]
+                        }
+                      },
+                      "status": "Not Found",
+                      "code": 404,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "84"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 11 Jul 2026 19:19:45 GMT"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a529751-1c3be99a4d83dad042edc161;Parent=4290d277d615f6cd;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "a3a4e8de-b169-4c8e-97d9-2d60cd6f7e8d"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AWyUvG22IAMEg8Q="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Error from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 ee8ac5103dc8ef9962c3dff0d3d279ea.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "BEAxafVSuRsqRuDzoOJZv8IY53ZX4PHnD_vhensvydOD-MMY_RPoYA=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"error\": \"The resource could not be found. Check your endpoint and request method.\"\n}"
+                    },
+                    {
+                      "name": "200OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "https://simple-grocery-store-api.glitch.me/status",
+                          "protocol": "https",
+                          "host": [
+                            "simple-grocery-store-api",
+                            "glitch",
+                            "me"
+                          ],
+                          "path": [
+                            "status"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "15"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 11 Jul 2026 19:22:03 GMT"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a5297db-23a217b825b842a51c677fdb;Parent=42faab0c93b5d5f4;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "043c9322-85f5-4f0e-a2d2-b25df6bd9af0"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AWyqUH82IAMEFVA="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Miss from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 27a4997d1b1129dbb965ca80a491e18e.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "O5-atESLhmqL57lOEJQwmEh8f7nQ6wDdMhI9RoQAiRPAiPRY7QNc-g=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"status\": \"UP\"\n}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Products",
+              "item": [
+                {
+                  "name": "Get all products",
+                  "request": {
+                    "method": "GET",
+                    "header": []
+                  },
+                  "response": [
+                    {
+                      "name": "200OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "https://simple-grocery-store-api.glitch.me/products",
+                          "protocol": "https",
+                          "host": [
+                            "simple-grocery-store-api",
+                            "glitch",
+                            "me"
+                          ],
+                          "path": [
+                            "products"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "1725"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 11 Jul 2026 19:48:31 GMT"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "5b8e08d6-14db-4819-a418-c2708c2c1134"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AW2ifFxVoAMEDMg="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a529e0f-06d6f0141e4c497a0861a437;Parent=33abe8155e318407;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Miss from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 27a4997d1b1129dbb965ca80a491e18e.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "cI25365IycmCLAbnHXULlvJXqF27clq5l3rVlm6VvjmtZ3N1MUbiSw=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "[\n    {\n        \"id\": 1225,\n        \"category\": \"fresh-produce\",\n        \"name\": \"1/2 in. Brushless Hammer Drill\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 1709,\n        \"category\": \"meat-seafood\",\n        \"name\": \"Beef Choice Angus Ribeye Steak\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 1710,\n        \"category\": \"meat-seafood\",\n        \"name\": \"Angus Steak Burgers\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 2177,\n        \"category\": \"meat-seafood\",\n        \"name\": \"Cosco Three Step Steel Platform\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 2585,\n        \"category\": \"fresh-produce\",\n        \"name\": \"Green Cabbage Organic\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 3486,\n        \"category\": \"bread-bakery\",\n        \"name\": \"French Bread\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 3674,\n        \"category\": \"fresh-produce\",\n        \"name\": \"20V Max Cordless Drill Combo Kit\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 4641,\n        \"category\": \"coffee\",\n        \"name\": \"Don Francisco Colombia Supremo Medium Roast\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 4643,\n        \"category\": \"coffee\",\n        \"name\": \"Starbucks Coffee Variety Pack, 100% Arabica\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 4646,\n        \"category\": \"coffee\",\n        \"name\": \"Ethical Bean Medium Dark Roast, Espresso\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 4875,\n        \"category\": \"bread-bakery\",\n        \"name\": \"2800 Watt Inverter Generator\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 5477,\n        \"category\": \"dairy\",\n        \"name\": \"Cream Cheese\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 5478,\n        \"category\": \"dairy\",\n        \"name\": \"Low Fat Vanilla Yogurt\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 5499,\n        \"category\": \"bread-bakery\",\n        \"name\": \"Sourdough Bread\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 5774,\n        \"category\": \"candy\",\n        \"name\": \"HERSHEY'S, Milk Chocolate Almond\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 5851,\n        \"category\": \"fresh-produce\",\n        \"name\": \"Cucumber Organic\",\n        \"inStock\": false\n    },\n    {\n        \"id\": 6483,\n        \"category\": \"candy\",\n        \"name\": \"Cadbury Milk Chocolate\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 6543,\n        \"category\": \"bread-bakery\",\n        \"name\": \"Flour Tortillas\",\n        \"inStock\": false\n    },\n    {\n        \"id\": 7395,\n        \"category\": \"meat-seafood\",\n        \"name\": \"Boneless Skinless Chicken Breasts\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 8554,\n        \"category\": \"candy\",\n        \"name\": \"Kinder Joy Eggs\",\n        \"inStock\": true\n    }\n]"
+                    },
+                    {
+                      "name": "404 error",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "https://simple-grocery-store-api.glitch.me/produts",
+                          "protocol": "https",
+                          "host": [
+                            "simple-grocery-store-api",
+                            "glitch",
+                            "me"
+                          ],
+                          "path": [
+                            "produts"
+                          ]
+                        }
+                      },
+                      "status": "Not Found",
+                      "code": 404,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "84"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 11 Jul 2026 20:20:29 GMT"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a52a58d-75809ffa0b1761cd1c3a4e39;Parent=343567f2edf05459;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "a06b3e56-7cf9-4b16-9e85-4a64f0b151d2"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AW7OLGuEoAMEszg="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Error from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 4d312fa9950971c88054a0fc2536913e.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "M8WVwZECMAadfNALcdXHk9va06JVJxIIUEDuG5TWZdWMZmdJwfXpRw=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"error\": \"The resource could not be found. Check your endpoint and request method.\"\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "Get product by name",
+                  "request": {
+                    "method": "GET",
+                    "header": []
+                  },
+                  "response": [
+                    {
+                      "name": "404 bad request",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "https://simple-grocery-store-api.glitch.me/products?category=burgers&results=5&available =true",
+                          "protocol": "https",
+                          "host": [
+                            "simple-grocery-store-api",
+                            "glitch",
+                            "me"
+                          ],
+                          "path": [
+                            "products"
+                          ],
+                          "query": [
+                            {
+                              "key": "category",
+                              "value": "burgers"
+                            },
+                            {
+                              "key": "results",
+                              "value": "5"
+                            },
+                            {
+                              "key": "available ",
+                              "value": "true"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "Bad Request",
+                      "code": 400,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "143"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 11 Jul 2026 20:31:22 GMT"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "60877fff-b627-4355-86b2-3a5d4fed4c7a"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AW80PF81IAMEPHQ="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a52a81a-0d0499222ed072e736e336af;Parent=5d887f0a775c0eb8;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Error from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 ecaa6567b96ae3a6069400ba39167766.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "0DCV5RTO4ug-r2wyKZWAlXZiT2KSzg4QL2OphUQ9c9oo39SwUgXDRQ=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"error\": \"Invalid value for query parameter 'category'. Must be one of: coffee, fresh-produce, meat-seafood, candy, dairy, bread-bakery, eggs\"\n}"
+                    },
+                    {
+                      "name": "200 OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "https://simple-grocery-store-api.glitch.me/products?category=coffee&results=5&available =true",
+                          "protocol": "https",
+                          "host": [
+                            "simple-grocery-store-api",
+                            "glitch",
+                            "me"
+                          ],
+                          "path": [
+                            "products"
+                          ],
+                          "query": [
+                            {
+                              "key": "category",
+                              "value": "coffee"
+                            },
+                            {
+                              "key": "results",
+                              "value": "5"
+                            },
+                            {
+                              "key": "available ",
+                              "value": "true"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "298"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 11 Jul 2026 20:32:59 GMT"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "3f954d69-d234-4cdd-89d0-f9b1c3bb7109"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AW9DVGvKIAMEC1g="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a52a87b-328d1b35051d06cb6b13e78e;Parent=18a7894cb12b3a7c;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Miss from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 ee8ac5103dc8ef9962c3dff0d3d279ea.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "xMRofqCoPM_JOr5vg7Qw1bZp4_5Nmtble_JzQofMYGuFepc57y8TZg=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "[\n    {\n        \"id\": 4641,\n        \"category\": \"coffee\",\n        \"name\": \"Don Francisco Colombia Supremo Medium Roast\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 4643,\n        \"category\": \"coffee\",\n        \"name\": \"Starbucks Coffee Variety Pack, 100% Arabica\",\n        \"inStock\": true\n    },\n    {\n        \"id\": 4646,\n        \"category\": \"coffee\",\n        \"name\": \"Ethical Bean Medium Dark Roast, Espresso\",\n        \"inStock\": true\n    }\n]"
+                    },
+                    {
+                      "name": "200OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "https://simple-grocery-store-api.glitch.me/products?category=dairy&results=1&available =true",
+                          "protocol": "https",
+                          "host": [
+                            "simple-grocery-store-api",
+                            "glitch",
+                            "me"
+                          ],
+                          "path": [
+                            "products"
+                          ],
+                          "query": [
+                            {
+                              "key": "category",
+                              "value": "dairy"
+                            },
+                            {
+                              "key": "results",
+                              "value": "1"
+                            },
+                            {
+                              "key": "available ",
+                              "value": "true"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "69"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 11 Jul 2026 20:48:53 GMT"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a52ac35-5e5d99cd6db4788e3873c3e1;Parent=5df231287e808207;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "e1a3faf1-3435-4f57-a819-7041ef7f7b2e"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AW_YbEguIAMEJUA="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Miss from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 753d61558f619a020e3a24f8c564f65a.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "9ZvRrYMgYcJgSZ4qjgPbJpEl9aqaIAY6qzj9WYbAk58KYB24NO9VNw=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "[\n    {\n        \"id\": 5477,\n        \"category\": \"dairy\",\n        \"name\": \"Cream Cheese\",\n        \"inStock\": true\n    }\n]"
+                    }
+                  ]
+                },
+                {
+                  "name": "Get product by Id",
+                  "request": {
+                    "method": "GET",
+                    "header": []
+                  },
+                  "response": [
+                    {
+                      "name": "200OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "https://simple-grocery-store-api.glitch.me/products/:productId?=",
+                          "protocol": "https",
+                          "host": [
+                            "simple-grocery-store-api",
+                            "glitch",
+                            "me"
+                          ],
+                          "path": [
+                            "products",
+                            ":productId"
+                          ],
+                          "query": [
+                            {
+                              "key": "",
+                              "value": ""
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "key": "productId",
+                              "value": "4646"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "158"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 11 Jul 2026 20:39:41 GMT"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a52aa0d-0c751b146e6dae2d0667a5fd;Parent=46aafdd06cbc15f4;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "5a5f2985-c9f2-42bc-a34d-60de3dedabe5"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AW-CJEBgIAMEUwQ="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Miss from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 4f979cc2b123750bae97966da83d7408.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "fMKEiT6d5ZvBO_0lMpo2DipdQwquaY2gFiU4DUGk_QvOyBd_FdSydg=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"id\": 4646,\n    \"category\": \"coffee\",\n    \"name\": \"Ethical Bean Medium Dark Roast, Espresso\",\n    \"manufacturer\": \"Ethical Bean\",\n    \"price\": 7.78,\n    \"current-stock\": 10,\n    \"inStock\": true\n}"
+                    },
+                    {
+                      "name": "404 Not Found",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "https://simple-grocery-store-api.glitch.me/products/:productId?=",
+                          "protocol": "https",
+                          "host": [
+                            "simple-grocery-store-api",
+                            "glitch",
+                            "me"
+                          ],
+                          "path": [
+                            "products",
+                            ":productId"
+                          ],
+                          "query": [
+                            {
+                              "key": "",
+                              "value": ""
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "key": "productId",
+                              "value": "4623"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "Not Found",
+                      "code": 404,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "36"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 11 Jul 2026 20:43:11 GMT"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "ec183a7f-a0ec-4f83-8f0d-9cb2cbe596c0"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AW-jEGMAIAMEsHQ="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a52aadf-66aef8c33589db14129dfd1d;Parent=6fbd9e788a67ff91;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Error from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 6006b2e63e424aabf2253b6d7d7e57fa.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "jbWyAm9_Wa0a4ahyx-oK54m6ZdLJBPP9lH4ynGoacGQ2EgMN5gzKsQ=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"error\": \"No product with id 4623.\"\n}"
+                    },
+                    {
+                      "name": "200 OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "https://simple-grocery-store-api.glitch.me/products/:productId?=",
+                          "protocol": "https",
+                          "host": [
+                            "simple-grocery-store-api",
+                            "glitch",
+                            "me"
+                          ],
+                          "path": [
+                            "products",
+                            ":productId"
+                          ],
+                          "query": [
+                            {
+                              "key": "",
+                              "value": ""
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "key": "productId",
+                              "value": "5477"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "140"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Sat, 11 Jul 2026 20:52:24 GMT"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "3d5c24a7-af35-4346-856a-4979a12e2cd3"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AW_5aELooAMEpkA="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a52ad08-249df5c73dec66a8507f93fb;Parent=1a82a2f380c2d374;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Miss from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 4d312fa9950971c88054a0fc2536913e.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "Ihd6KHbln2elKtcbAdiM302ueugRToFiGswUjPTR8V-DJTsUyRAfKg=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"id\": 5477,\n    \"category\": \"dairy\",\n    \"name\": \"Cream Cheese\",\n    \"manufacturer\": \"Jack&Mary Organic Farms\",\n    \"price\": 2.95,\n    \"current-stock\": 12,\n    \"inStock\": true\n}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Carts",
+              "item": [
+                {
+                  "name": "Create a New Cart",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "url": {
+                      "raw": "{{Grocery API Base Variable}}/carts",
+                      "host": [
+                        "{{Grocery API Base Variable}}"
+                      ],
+                      "path": [
+                        "carts"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "201 created",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/carts",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "carts"
+                          ]
+                        }
+                      },
+                      "status": "Created",
+                      "code": 201,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "49"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Mon, 13 Jul 2026 19:04:11 GMT"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "8993693c-7926-47fd-8d1a-3eb1f9779680"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AdV61F7soAMEgfg="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a5536ab-548586271556dd163dfd4887;Parent=7789e5aee0539e36;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Miss from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 62dc5fc8174d0e36bcbea4543058f992.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "58JPhfe-byAyliD6yE5WRFeGKfnet-6E1cz-P5HvHPCwJwt3s5KYvA=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"created\": true,\n    \"cartId\": \"kAVaQ2hAb11ya_OQLLSTT\"\n}"
+                    },
+                    {
+                      "name": "404 Not Found",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/cart",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "cart"
+                          ]
+                        }
+                      },
+                      "status": "Not Found",
+                      "code": 404,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "84"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Mon, 13 Jul 2026 19:05:27 GMT"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "f06c68e1-7899-48be-96b8-f32b4b7678d8"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AdWGwFWqIAMEWpA="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a5536f7-0813af971385707574aada87;Parent=0c26a6fa9f6398fa;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Error from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 4d312fa9950971c88054a0fc2536913e.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "-yQaEOwSMBhac9hp5tFDbmATkf9SK3xUiDB3a2d7R_kTYXpMYtNtEw=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"error\": \"The resource could not be found. Check your endpoint and request method.\"\n}"
+                    },
+                    {
+                      "name": "201 Created",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/carts",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "carts"
+                          ]
+                        }
+                      },
+                      "status": "Created",
+                      "code": 201,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "49"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Wed, 15 Jul 2026 15:33:06 GMT"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "6c15ca91-5d10-4988-aa5f-1a72b592f162"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "Ajc36EAyIAMEAXQ="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a57a832-119aa32e1f9b47445dd9f63b;Parent=4d34d82ba83689dd;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Miss from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 a75ccb8873128c2704216101e8d9a636.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "yz_sjjEFIAD3-9tU__qaZwEZGabKD1-BtlOSKcbvQqSjcIGz3_JT5w=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"created\": true,\n    \"cartId\": \"zht0uxt0rWRiDhjFtpOTt\"\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "Add an item to the  cart",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\"productId\":1225}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{Grocery API Base Variable}}/carts/:cartId/items",
+                      "host": [
+                        "{{Grocery API Base Variable}}"
+                      ],
+                      "path": [
+                        "carts",
+                        ":cartId",
+                        "items"
+                      ],
+                      "variable": [
+                        {
+                          "key": "cartId",
+                          "value": "kAVaQ2hAb11ya_OQLLSTT"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "400 Bad Request",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\"productId\":2325}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/carts/:cartId/items",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "carts",
+                            ":cartId",
+                            "items"
+                          ],
+                          "variable": [
+                            {
+                              "key": "cartId",
+                              "value": "kAVaQ2hAb11ya_OQLLSTT"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "Bad Request",
+                      "code": 400,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "41"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Mon, 13 Jul 2026 19:26:14 GMT"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a553bd6-55a0dac2617cec4f1beaa5fb;Parent=7c0a9fad7cecdcd8;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "3a734ffc-6e77-4191-ba93-29ede6d230e8"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AdZJmFBmIAMEmjw="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Error from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 5e868b55b502623cfa1c1fa31e1c91c8.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "LOzv40USkQsquk9o7blGt6e_J18vaFVikmnUwswZllNwBY6LYn76eQ=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"error\": \"Invalid or missing productId.\"\n}"
+                    },
+                    {
+                      "name": "404 Not Found",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\"productId\":1225}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/carts/:cartId/items",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "carts",
+                            ":cartId",
+                            "items"
+                          ],
+                          "variable": [
+                            {
+                              "key": "cartId",
+                              "value": "kAVaQ2hAb11ya_OQLLSTt"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "Not Found",
+                      "code": 404,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "50"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Mon, 13 Jul 2026 19:27:26 GMT"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a553c1e-4622cc134f2dd62610acf809;Parent=47d237be10ac0d5e;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "7f21892f-9d36-4359-8b7f-666d83dca0b3"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AdZUzFKxoAMEgFw="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Error from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 cded7f6feab5e981a7d2ac5d0ce86a38.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "-C8YI5I92dALfjLb9ed_YPXquOTgWXD8mdXYBQAyFIqXzsUApH85wQ=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"error\": \"No cart with id kAVaQ2hAb11ya_OQLLSTt.\"\n}"
+                    },
+                    {
+                      "name": "201 Created",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\"productId\":4875}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/carts/:cartId/items",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "carts",
+                            ":cartId",
+                            "items"
+                          ],
+                          "variable": [
+                            {
+                              "key": "cartId",
+                              "value": "kAVaQ2hAb11ya_OQLLSTT"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "Created",
+                      "code": 201,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "35"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Mon, 13 Jul 2026 19:35:35 GMT"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "82226c17-f328-435f-9721-bda1ee1ebe42"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AdahNHj4IAMEqyg="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a553e07-480d54f71d19cfcb5d3d010e;Parent=16a3c1d94eb185a4;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Miss from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 ecaa6567b96ae3a6069400ba39167766.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "cLnVF1Lx_sGtKktd4Jdi97OMgoEuYDOD38tqLZtFeX1XeU-tGZosWg=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"created\": true,\n    \"itemId\": 200379674\n}"
+                    },
+                    {
+                      "name": "201 Created",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\"productId\":1225}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/carts/:cartId/items",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "carts",
+                            ":cartId",
+                            "items"
+                          ],
+                          "variable": [
+                            {
+                              "key": "cartId",
+                              "value": "kAVaQ2hAb11ya_OQLLSTT"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "Created",
+                      "code": 201,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "35"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Mon, 13 Jul 2026 19:24:15 GMT"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "df952228-7347-4225-91d9-3960a48b7842"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AdY3BGDTIAMEcTA="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a553b5f-004fcd7e3268bc1d43345f1a;Parent=4a45e93ebc4a22b1;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Miss from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 6e96e2926c8953a2e57fa9907208c588.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "3hxEbls8rcgDTYNcnMuaz6gmUX-5uU2RSd5XG-H3kbVmHOo6dj0s2A=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"created\": true,\n    \"itemId\": 384720667\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "Get Cart Items",
+                  "request": {
+                    "method": "GET",
+                    "header": []
+                  },
+                  "response": [
+                    {
+                      "name": "404 Not Found",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/carts/:cartId/items",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "carts",
+                            ":cartId",
+                            "items"
+                          ],
+                          "variable": [
+                            {
+                              "key": "cartId",
+                              "value": ""
+                            }
+                          ]
+                        }
+                      },
+                      "status": "Not Found",
+                      "code": 404,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "36"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Mon, 13 Jul 2026 19:31:18 GMT"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a553d06-18d318943ecc9bf451892d61;Parent=4571aaacb5cd7584;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "c43af638-96c4-4b05-bae7-1f269eb2660f"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AdZ5DFaLIAMEsHw="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Error from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 753d61558f619a020e3a24f8c564f65a.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "mfgC3SzpRYN2rssFpIxWWEhGpbI4JwDBu2A0RG8JtDckc3JP9DwgwA=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"error\": \"No cart with id :cartId.\"\n}"
+                    },
+                    {
+                      "name": "200 OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/carts/:cartId/items",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "carts",
+                            ":cartId",
+                            "items"
+                          ],
+                          "query": [
+                            {
+                              "key": null,
+                              "value": "",
+                              "type": "text",
+                              "disabled": true
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "key": "cartId",
+                              "value": "kAVaQ2hAb11ya_OQLLSTT"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "95"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Mon, 13 Jul 2026 19:37:09 GMT"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a553e65-58a33d9c5f22a25f7af2e229;Parent=3d1d58670f722b53;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "3c1df4d2-b53d-4504-ac84-5854ab43622d"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "Adav7GPCIAMEHlw="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Miss from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 379b0c98ca13080411ec25cd9e517ba6.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "VVV8IM32Qk4es5NTkdLZjYR0WRbKlkXgWiZJxBJQSgLSSlvEyCy8_A=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "[\n    {\n        \"productId\": 1225,\n        \"id\": 384720667,\n        \"quantity\": 1\n    },\n    {\n        \"productId\": 4875,\n        \"id\": 200379674,\n        \"quantity\": 1\n    }\n]"
+                    }
+                  ]
+                },
+                {
+                  "name": "Get a Cart",
+                  "request": {
+                    "method": "GET",
+                    "header": []
+                  },
+                  "response": [
+                    {
+                      "name": "200 OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": ""
+                        },
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/carts/:cartId",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "carts",
+                            ":cartId"
+                          ],
+                          "variable": [
+                            {
+                              "key": "cartId",
+                              "value": "kAVaQ2hAb11ya_OQLLSTT"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "142"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Mon, 13 Jul 2026 19:44:12 GMT"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a55400c-1cf50989315348f321d64af1;Parent=4c76e0af9e1d87cc;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "acce558a-94f7-441b-9c6b-654de2148d4b"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AdbyGEVeIAMEL0g="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Miss from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 753d61558f619a020e3a24f8c564f65a.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "bTwVTiFefVWMZwT1A4qgkYDzMfxfpAJM9x6-kjg8XFcsdD6mzhxGtw=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"items\": [\n        {\n            \"productId\": 1225,\n            \"id\": 384720667,\n            \"quantity\": 1\n        },\n        {\n            \"productId\": 4875,\n            \"id\": 200379674,\n            \"quantity\": 1\n        }\n    ],\n    \"created\": \"2026-07-13T19:04:11.284Z\"\n}"
+                    },
+                    {
+                      "name": "404 Not Found",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": ""
+                        },
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/carts/:cartId",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "carts",
+                            ":cartId"
+                          ],
+                          "variable": [
+                            {
+                              "key": "cartId",
+                              "value": "kAVaQ2hAb11ya_OQLLST"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "Not Found",
+                      "code": 404,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "49"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Mon, 13 Jul 2026 19:44:54 GMT"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a554036-3d76a44c05827d4803fbbc7c;Parent=05404726b1b4ca04;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "1c09054f-1e5e-4a68-9bdd-53bb64731651"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "Adb4nFZNoAMEn1g="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Error from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 6006b2e63e424aabf2253b6d7d7e57fa.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "fonf-FGuxvVybJIz9jluuY6qubHbSB3YSKtTjA03Q3vLH5RHNOVvRg=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"error\": \"No cart with id kAVaQ2hAb11ya_OQLLST.\"\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "Modify item in the cart",
+                  "request": {
+                    "method": "PATCH",
+                    "header": [],
+                    "url": {
+                      "raw": "{{Grocery API Base Variable}}/cats/:cartId/items/:itemId",
+                      "host": [
+                        "{{Grocery API Base Variable}}"
+                      ],
+                      "path": [
+                        "cats",
+                        ":cartId",
+                        "items",
+                        ":itemId"
+                      ],
+                      "variable": [
+                        {
+                          "key": "cartId",
+                          "value": "kAVaQ2hAb11ya_OQLLSTT"
+                        },
+                        {
+                          "key": "itemId",
+                          "value": ""
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "204 No Content",
+                      "originalRequest": {
+                        "method": "PATCH",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\"quantity\": 6}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/carts/:cartId/items/:itemId",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "carts",
+                            ":cartId",
+                            "items",
+                            ":itemId"
+                          ],
+                          "variable": [
+                            {
+                              "key": "cartId",
+                              "value": "kAVaQ2hAb11ya_OQLLSTT"
+                            },
+                            {
+                              "key": "itemId",
+                              "value": "200379674"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "No Content",
+                      "code": 204,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "0"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Mon, 13 Jul 2026 20:01:55 GMT"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "f8f8cdfa-56ae-4898-8aeb-175fe2a20652"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AdeYJFxvoAMEQpQ="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a554433-095996882d54607d5bb67bf0;Parent=1f3f2ee040602ef3;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Miss from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 6f990c126ed1cb8a4cfc1686dbe736e8.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "aNKh5OH5AvQKlDYVDyFP1nhnOA_ehO0hfX28wP3zMhPPVh3oPyGAVQ=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": null
+                    }
+                  ]
+                },
+                {
+                  "name": "Replace an item in the cart",
+                  "request": {
+                    "method": "PUT",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"productId\": 4646,\r\n    \"quantity\": 1\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{Grocery API Base Variable}}/carts/:cartId/items/:itemId",
+                      "host": [
+                        "{{Grocery API Base Variable}}"
+                      ],
+                      "path": [
+                        "carts",
+                        ":cartId",
+                        "items",
+                        ":itemId"
+                      ],
+                      "variable": [
+                        {
+                          "key": "cartId",
+                          "value": "kAVaQ2hAb11ya_OQLLSTT"
+                        },
+                        {
+                          "key": "itemId",
+                          "value": "200379674"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "404 Not Found",
+                      "originalRequest": {
+                        "method": "PATCH",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\"quantity\": 6}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/cats/:cartId/items/:itemId",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "cats",
+                            ":cartId",
+                            "items",
+                            ":itemId"
+                          ],
+                          "variable": [
+                            {
+                              "key": "cartId",
+                              "value": "kAVaQ2hAb11ya_OQLLSTT"
+                            },
+                            {
+                              "key": "itemId",
+                              "value": "200379674"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "Not Found",
+                      "code": 404,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "84"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Mon, 13 Jul 2026 19:58:59 GMT"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a554383-62acd332615c9bcd6d4cef24;Parent=79cd550ebe47139b;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "253fb24a-403c-4e32-b4fa-7677a3648a88"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "Add8nHwZIAMEtMA="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Error from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 ca0442376a40e5f0ec8ceb5f13606596.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "TYmYpjcPAr518SW7OLeCxq-ATe-GGkExKXbbJtPUcdnNKKDPbddSOg=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"error\": \"The resource could not be found. Check your endpoint and request method.\"\n}"
+                    },
+                    {
+                      "name": "400 Bad Request",
+                      "originalRequest": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"productId\": 4646,\r\n    \r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/carts/:cartId/items/:itemId",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "carts",
+                            ":cartId",
+                            "items",
+                            ":itemId"
+                          ],
+                          "variable": [
+                            {
+                              "key": "cartId",
+                              "value": "kAVaQ2hAb11ya_OQLLSTT"
+                            },
+                            {
+                              "key": "itemId",
+                              "value": "200379674"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "Bad Request",
+                      "code": 400,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "49"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Mon, 13 Jul 2026 20:28:26 GMT"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a554a6a-69f6c28a6fdf73916561f1b8;Parent=3e7be28f2f505c07;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "98b76668-46cd-4d42-a5a6-a23e06fe016f"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AdiQvGBvoAMEWVA="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Error from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 4647dc1c8001fa9f311935bafe4ec8c2.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "noRow7rQNZiNjkqUDDOZArTw_i-LEW8ogICrTNEE7o8uXIzHY_nxVQ=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"error\": \"The request body could not be parsed.\"\n}"
+                    },
+                    {
+                      "name": "204 No Content",
+                      "originalRequest": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"productId\": 4646,\r\n    \"quantity\": 1\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/carts/:cartId/items/:itemId",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "carts",
+                            ":cartId",
+                            "items",
+                            ":itemId"
+                          ],
+                          "variable": [
+                            {
+                              "key": "cartId",
+                              "value": "kAVaQ2hAb11ya_OQLLSTT"
+                            },
+                            {
+                              "key": "itemId",
+                              "value": "200379674"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "No Content",
+                      "code": 204,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "0"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Mon, 13 Jul 2026 20:26:17 GMT"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "ab6f11e1-c2c4-4f2e-bd79-1d2baf2deae6"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "Adh8lH2PIAMEv3A="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a5549e9-580ad34b16b478af383066ba;Parent=04deb16991fdba9d;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Miss from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 19b23d8148d2d868553ed440cc451008.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "9YyXXVQ87_2ifp4uYKxTK3vooOJDruRWhy0oNh67Ly4cc7otS5ul3A=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": null
+                    }
+                  ]
+                },
+                {
+                  "name": "Delete an Item in the Cart",
+                  "request": {
+                    "method": "DELETE",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": {
+                      "raw": "{{Grocery API Base Variable}}/carts/:cartId/items/:itemId",
+                      "host": [
+                        "{{Grocery API Base Variable}}"
+                      ],
+                      "path": [
+                        "carts",
+                        ":cartId",
+                        "items",
+                        ":itemId"
+                      ],
+                      "variable": [
+                        {
+                          "key": "cartId",
+                          "value": "kAVaQ2hAb11ya_OQLLSTT"
+                        },
+                        {
+                          "key": "itemId",
+                          "value": "384720667"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "204 No Content",
+                      "originalRequest": {
+                        "method": "DELETE",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": ""
+                        },
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/carts/:cartId/items/:itemId",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "carts",
+                            ":cartId",
+                            "items",
+                            ":itemId"
+                          ],
+                          "variable": [
+                            {
+                              "key": "cartId",
+                              "value": "kAVaQ2hAb11ya_OQLLSTT"
+                            },
+                            {
+                              "key": "itemId",
+                              "value": "384720667"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "No Content",
+                      "code": 204,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "0"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Mon, 13 Jul 2026 20:37:18 GMT"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "38b483cc-182e-4f1e-a4ca-1353b52d84b7"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "Adjj0FRhoAMErsg="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a554c7e-243693a0390fcbba1deac971;Parent=4312733cc23acea4;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Miss from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 07176b2f022f6a02b10faecdd79ef1bc.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "_7twbIBW5oPAhbP1n1QCyLm-CSDuGfIosqKT3htzXzYRmrokC20oMg=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Orders",
+              "item": [
+                {
+                  "name": "Create a new Order",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"cartid\": \"kAVaQ2hAb11ya_OQLLSTT\",\r\n    \"customerName\": \"Prathi\",\r\n    \"comment\": \"My First Order\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{Grocery API Base Variable}}/orders",
+                      "host": [
+                        "{{Grocery API Base Variable}}"
+                      ],
+                      "path": [
+                        "orders"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "401 Unauthorized",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"cartId\": \"kAVaQ2hAb11ya_OQLLSTT\",\r\n    \"customerName\": \"Prathi\",\r\n    \"comment\": \"My First Order\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/orders",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "orders"
+                          ]
+                        }
+                      },
+                      "status": "Unauthorized",
+                      "code": 401,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "41"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Wed, 15 Jul 2026 15:21:26 GMT"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a57a576-2e08aa93712177750fc60093;Parent=6e3e0d8fd1f7c300;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "46762baf-8a10-4722-b735-dc5a258612fe"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AjbKoHHoIAMEl_g="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Error from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 3e36dd267cb267a1625f6ecf58fe0bd2.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "VlGw8M0c1sRtKlvRDLMvbc3sIG8KjAWCRiaJ1XOEdn3jCspyCKq75A=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"error\": \"Missing Authorization header.\"\n}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Authentication",
+              "item": [
+                {
+                  "name": "Register a New Api Client",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"CLientName\": \"YourName,\r\n    \"ClientEmail\": \"yourname@email.com\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{Grocery API Base Variable}}/api-clients",
+                      "host": [
+                        "{{Grocery API Base Variable}}"
+                      ],
+                      "path": [
+                        "api-clients"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "409 Conflict",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"clientName\": \"YourName\",\r\n    \"clientEmail\": \"yourname@email.com\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/api-clients",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "api-clients"
+                          ]
+                        }
+                      },
+                      "status": "Conflict",
+                      "code": 409,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "65"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Wed, 15 Jul 2026 15:08:36 GMT"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a57a273-4206600f40239ffd027892be;Parent=00e0d1ee621119da;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "6dcf2111-7d4f-4439-bee2-31c877da7646"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AjZSMFxJoAMEecQ="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Error from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 0eead6b6d592f7fb31a5629652c63870.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "YYM2A-G-x_vtTuyezmtCKreFryUpMqArwPjR0cOX40KfKr3-kHPM5w=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"error\": \"API client already registered. Try a different email.\"\n}"
+                    },
+                    {
+                      "name": "201 Created",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"clientName\": \"YourName\",\r\n    \"clientEmail\": \"prati@email.com\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{Grocery API Base Variable}}/api-clients",
+                          "host": [
+                            "{{Grocery API Base Variable}}"
+                          ],
+                          "path": [
+                            "api-clients"
+                          ]
+                        }
+                      },
+                      "status": "Created",
+                      "code": 201,
+                      "_postman_previewlanguage": null,
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        },
+                        {
+                          "key": "Content-Length",
+                          "value": "82"
+                        },
+                        {
+                          "key": "Connection",
+                          "value": "keep-alive"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Wed, 15 Jul 2026 15:10:50 GMT"
+                        },
+                        {
+                          "key": "X-Amzn-Trace-Id",
+                          "value": "Root=1-6a57a2fa-33ae90aa6b58f852690c6b23;Parent=649a45d30d6e033c;Sampled=0;Lineage=1:9dbbed17:0"
+                        },
+                        {
+                          "key": "x-amzn-RequestId",
+                          "value": "617d442c-53ee-4ffe-abbd-ee116ea4c3b4"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Origin",
+                          "value": "*"
+                        },
+                        {
+                          "key": "Access-Control-Allow-Headers",
+                          "value": "Content-Type,X-Amz-Date,Authorization,X-Api-Key"
+                        },
+                        {
+                          "key": "x-amz-apigw-id",
+                          "value": "AjZnJF-9oAMELrg="
+                        },
+                        {
+                          "key": "Access-Control-Allow-Methods",
+                          "value": "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+                        },
+                        {
+                          "key": "X-Cache",
+                          "value": "Miss from cloudfront"
+                        },
+                        {
+                          "key": "Via",
+                          "value": "1.1 753d61558f619a020e3a24f8c564f65a.cloudfront.net (CloudFront)"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Pop",
+                          "value": "IAD61-P12"
+                        },
+                        {
+                          "key": "X-Amz-Cf-Id",
+                          "value": "PzLNzDYyb9K8vMeR-LOPYL02PM0crxJqRr7HlvF0f7eJkGeGTNkkhw=="
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n    \"accessToken\": \"f19952668de1cdfdb95325fa248874385b84ee385f60b34b9cb14f2bcf8afde2\"\n}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Production",
+          "item": []
+        }
+      ],
+      "auth": {
+        "type": "bearer"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {},
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {},
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "V2.0",
+      "item": []
+    },
+    {
+      "name": "V3.0",
+      "item": []
+    }
+  ],
+  "auth": {
+    "type": "bearer"
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "Grocery API Base Variable",
+      "value": ""
+    },
+    {
+      "key": "Grocery api acess token",
+      "value": ""
+    }
+  ]
+}
