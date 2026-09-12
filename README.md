@@ -175,8 +175,10 @@ HTTP 201 Created
 
 A successful request returns an access token:
 
+
 {
   "accessToken": "YOUR_ACCESS_TOKEN"
+  
 }
 
 Error Response
@@ -186,7 +188,9 @@ If the API client has already been registered, the API returns:
 HTTP 409 Conflict
 
 {
+
   "error": "API client already registered. Try a different email."
+  
 }
 
 **Status Codes**
@@ -198,25 +202,42 @@ StatusCode	      Description
 
 
 **Status**
+
 Checks whether the API is working.
+
 Endpoint: Get /Status
+
 Returns the status of the API.
+
 Example Response:
+
 {
+
     "status": "UP"
+    
 }
+
 Status UP indicates that the API is running as expected.
+
 No response / API is not functioning correctly.
 
 
 **Products**
+
 Get all Products
+
 Endpoint: GET/products
+
 Parameters
+
 No parameters required.
+
 Status codes
+
 Statuscode	      Description
+
 200	             Product found successfully
+
 404	             Not found
 
 
@@ -227,6 +248,7 @@ Example response
         "category": "candy",
         "name": "Cadbury Milk Chocolate",
         "inStock": true
+        
     }
 
 
