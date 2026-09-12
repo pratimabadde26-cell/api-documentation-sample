@@ -320,6 +320,156 @@ Example Error Response
 }
 
 
+**Carts**
+
+**Get a cart**
+
+Endpoint: Get/carts/:cartId
+
+Parameters
+
+Name	           Type        	In       	Required	        Description
+
+CartId	         String	      Path	        Yes	         ID of the cart
+				
+
+Status codes
+
+Status code	       Description
+
+200	               Cart returned successfully
+
+	
+**Create a new cart**
+
+Endpoint: POST/carts
+
+
+Status codes
+
+Status code	      Description
+
+201	             Cart created successfully
+
+Example response body:
+
+{
+
+    "created": true,
+    
+    "cartId": "kAVaQ2hAb11ya_OQLLSTT"
+    
+}
+
+Note: Save the cart Id, because it is needed for later cart requests.
+
+**Add an item to cart**
+
+Endpoint: POST/carts/:cartId/items
+
+Parameters
+
+Name          	Type	           In	       Required	            Description
+
+Cart Id	        String        	Path	      yes	                Id of the cart
+
+Example Response:
+
+{
+
+    "created": true,
+    
+    "cartId": "kAVaQ2hAb11ya_OQLLSTT"
+    
+}
+
+Example Error Response:
+
+{
+    "error": "The resource could not be found. Check your endpoint and request method."
+}
+
+Status codes:
+
+Status code	Description
+
+201	Item added to cart
+
+404	Product id or name is incorrect
+
+**Modify an item in the cart**
+
+Endpoint: PATTCH/carts/:cartId/items/:itemId
+
+Parameters
+
+Name	         Type	         In       	Required         	Description
+
+cartId       	String	        Path        	Yes	          Cart item changed successfully
+
+ItemId	       Integer	       Path	        Yes	         Item not found
+
+Status codes:
+
+Status code	            Description
+
+204                     	Cart item changed successfully
+
+404	                       Item not found
+
+**Replace an item in the cart**
+
+Endpoint: PUT/carts/cartId/items/: itemId
+
+Parameters
+
+Name	               Type	          In	    Required        	Description
+
+cartId            	String       	Path	        Yes          	Id of the cart
+
+
+ItemId	           Integer         	Path	      Yes	        Id of the cart item
+
+Status codes:
+
+Status code	    Description
+
+204	            Cart item replaced successfully
+
+400	Invalid request
+
+Request Body:
+
+{
+
+  "productId": 4646,
+  
+  "quantity": 1
+  
+}
+
+**Delete an item in the cart**
+
+Endpoint: DELETE/carts/:cartId/items/:itemId
+
+Parameters
+
+Name          	Type         	In	     Required	            Description
+
+CartId	        String       	Path	      Yes	              Id of the cart
+
+ItemId	Integer	Path	Yes	Id of the item
+
+Status codes:
+
+Status code	        Description
+
+204	               Cart item deleted successfully
+
+404	                Cart or item not found
+
+
+
 
 
 
